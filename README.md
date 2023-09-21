@@ -1,7 +1,5 @@
 # SHOP SIMULATION
 
-Project Title: **Shop Simulation**
-
 **Project Description:**
 The Shop Simulation project is a Java-based program designed to simulate the operations of a shop. It models a shop environment where customers can enter, place orders, be served by servers, pay for their orders, and leave the shop. The primary goal of this simulation is to illustrate concepts related to multi-threading and concurrent programming.
 
@@ -43,13 +41,13 @@ The Shop Simulation project is a Java-based program designed to simulate the ope
      java -cp src com.apophis.shop.ShopSimulation
      ```
 
-Contributing:
+**Contributing:**
 - Contributions to this project are welcome via pull requests.
 
-License:
+**License:**
 - This project is open-source and is licensed under the MIT License. You can find the full license details in the LICENSE file.
 
-Additional Notes:
+**Additional Notes:**
 - This simulation provides valuable insights into concurrent programming and can be a useful educational tool for understanding how multiple threads interact in a complex environment.
 - Feel free to customize the simulation parameters in the ShopSimulation class to explore different scenarios.
 
