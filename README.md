@@ -3,6 +3,18 @@
 **Project Description:**
 The Shop Simulation project is a Java-based program designed to simulate the operations of a shop. It models a shop environment where customers can enter, place orders, be served by servers, pay for their orders, and leave the shop. The primary goal of this simulation is to illustrate concepts related to multi-threading and concurrent programming.
 
+**Support My Work**
+
+Hey there! 👋
+
+I'm an independent creator working on various projects, from open-source software to content creation. If you find my work useful or enjoy what I do, consider supporting me with a virtual coffee!
+Your support helps keep me fueled and motivated to continue creating and sharing. It's a small gesture that goes a long way in making a difference.
+
+Thank you for being a part of my journey! ☕
+
+--> [**Buy Me a Coffee ☕**](https://www.buymeacoffee.com/apophis04)
+
+
 **Features:**
 - Customers can enter the shop, place orders, and pay for their orders.
 - Servers are available to serve customers by making products.
