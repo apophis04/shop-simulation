@@ -1,92 +1,54 @@
+Project Title: **Shop Simulation**
 
-```markdown
-# Shop Simulation
+**Project Description:**
+The Shop Simulation project is a Java-based program designed to simulate the operations of a shop. It models a shop environment where customers can enter, place orders, be served by servers, pay for their orders, and leave the shop. The primary goal of this simulation is to illustrate concepts related to multi-threading and concurrent programming.
 
-![Shop Simulation Banner](images/banner.png)
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-  - [Customizing Simulation](#customizing-simulation)
-  - [Running the Simulation](#running-the-simulation)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-The Shop Simulation project is a Java-based simulation of a shop environment where customers can enter, place orders, be served by servers, pay for their orders, and leave the shop. This simulation is designed to illustrate multi-threading and concurrent programming concepts.
-
-![Shop Overview](images/shop_overview.png)
-
-## Features
-
-- Customers can enter the shop, place orders, and pay.
+**Features:**
+- Customers can enter the shop, place orders, and pay for their orders.
 - Servers are available to serve customers by making products.
-- Simulated customers and servers interact concurrently.
+- Simulated customers and servers interact concurrently in a multi-threaded environment.
 
-## Getting Started
+**How It Works:**
+1. Customers enter the shop with a random order size between 1 and 25 products.
+2. Servers are responsible for making the products for customers.
+3. Servers can make a specific number of products at a time (e.g., Server 1 can make a maximum of 2 products at once).
+4. Once a server has obtained all the items required for a customer's order, a final product is made, fulfilling part of the customer's order.
+5. If a customer's entire order is not fulfilled during one server visit, the customer returns to the waiting area.
+6. The waiting area is organized by the shortest order next.
+7. Customers pay at a shared cash register and leave the shop.
 
-### Prerequisites
+**Project Structure:**
+- ShopSimulation.java: The main class responsible for running the simulation.
+- Shop.java: Represents the shop with methods to handle customer interactions.
+- Customer.java: Represents a customer as a separate thread.
+- Server.java: Represents a server as a separate thread.
 
-To run the simulation, ensure you have the following installed:
+**Getting Started:**
+1. *Prerequisites:*
+   - Java Development Kit (JDK) installed on your system.
 
-- Java Development Kit (JDK)
+2. *Installation:*
+   - Clone the project repository from [repository_url].
+   - Navigate to the project directory.
 
-### Installation
+3. *Running the Simulation:*
+   - Compile the code using the following command:
+     ```
+     javac -d . src/com/apophis/shop/*.java
+     ```
+   - *Run the simulation using the command:*
+     ```
+     java -cp src com.apophis.shop.ShopSimulation
+     ```
 
-1. Clone the repository:
+Contributing:
+- Contributions to this project are welcome via pull requests.
 
-   ```bash
-   git clone https://github.com/yourusername/shop-simulation.git
-   cd shop-simulation
-   ```
+License:
+- This project is open-source and is licensed under the MIT License. You can find the full license details in the LICENSE file.
 
-2. Compile the Java code:
+Additional Notes:
+- This simulation provides valuable insights into concurrent programming and can be a useful educational tool for understanding how multiple threads interact in a complex environment.
+- Feel free to customize the simulation parameters in the ShopSimulation class to explore different scenarios.
 
-   ```bash
-   javac src/com/apophis/shop/*.java
-   ```
 
-## Usage
-
-### Customizing Simulation
-
-You can customize the simulation by adjusting the parameters in the `ShopSimulation` class:
-
-```java
-// Number of customers to simulate
-int numCustomers = 10;
-
-// Number of servers available
-int numServers = 4;
-```
-
-### Running the Simulation
-
-1. Run the simulation:
-
-   ```bash
-   java -cp src com.apophis.shop.ShopSimulation
-   ```
-
-   ![Running Simulation](images/running_simulation.png)
-
-2. Observe customers entering the shop, being served by servers, paying for their orders, and leaving the shop.
-
-   ![Simulation Output](images/simulation_output.png)
-
-## Contributing
-
-Contributions to this project are welcome. Feel free to fork the repository, make improvements, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-To create this README, you would need to replace the image placeholders (`images/banner.png`, `images/shop_overview.png`, `images/running_simulation.png`, `images/simulation_output.png`) with actual images and provide additional descriptions and details specific to your project.
